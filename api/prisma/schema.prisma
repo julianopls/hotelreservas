@@ -1,0 +1,31 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Quarto {
+  id       Int    @id @default(autoincrement())
+  numero   Int @unique
+  tipo     String
+
+  reservas Reserva[]
+}
+
+model Reserva {
+  id            Int      @id @default(autoincrement())
+  hospede       String
+  data_entrada  DateTime
+  data_saida    DateTime
+
+  quarto_id Int
+  quarto    Quarto @relation(fields: [quarto_id], references: [id], onDelete: Cascade)
+}

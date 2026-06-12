@@ -1,0 +1,286 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1769617922330
+  modified: 1769617922330
+  description: ""
+collection:
+  - name: 👤 Usuários
+    meta:
+      id: fld_bc3cab74ca2e4522b587fe797bdcc979
+      created: 1777483216552
+      modified: 1777483216552
+      sortKey: -1777483216552
+      description: ""
+  - name: 🗂️ Coleções
+    meta:
+      id: fld_679c99f9eb1841c8a661c82bd0ae9be6
+      created: 1777483216556
+      modified: 1777483216556
+      sortKey: -1777483216556
+      description: ""
+  - name: 🛍️ Produtos
+    meta:
+      id: fld_05412ec737d94f8fba8378de9ed3e802
+      created: 1777483216560
+      modified: 1777483216560
+      sortKey: -1777483216560
+      description: ""
+  - name: 📦 Estoque
+    meta:
+      id: fld_f32b9bec21734784bc20080e72be342f
+      created: 1777483216565
+      modified: 1777483216565
+      sortKey: -1777483216565
+      description: ""
+  - name: 🛒 Carrinho
+    meta:
+      id: fld_e5366041e77442e9a93466cea731de7d
+      created: 1777483216570
+      modified: 1777483216570
+      sortKey: -1777483216570
+      description: ""
+  - name: 📋 Pedidos
+    meta:
+      id: fld_0fbfd9b4c5884061aa6074cc233ef2ff
+      created: 1777483216575
+      modified: 1777483216575
+      sortKey: -1777483216575
+      description: ""
+  - name: ⭐ Avaliações
+    meta:
+      id: fld_817040e39af04eb5af4f90e2caa41cfe
+      created: 1777483216580
+      modified: 1777483216580
+      sortKey: -1777483216580
+      description: ""
+  - name: 📢 Avisos
+    meta:
+      id: fld_4c4287870e9b45b0ba4bd4196f1022bc
+      created: 1777483216585
+      modified: 1777483216585
+      sortKey: -1777483216585
+      description: ""
+  - name: 🔍 Logs Admin
+    meta:
+      id: fld_133f8ed8787047ad9c38c1f662be9707
+      created: 1777483216589
+      modified: 1777483216589
+      sortKey: -1777483216589
+      description: ""
+  - name: api
+    meta:
+      id: fld_cb6ef8c579324384b25a14cfb5356850
+      created: 1781265003835
+      modified: 1781265003835
+      sortKey: -1781265003835
+      description: ""
+    children:
+      - name: Quarto
+        meta:
+          id: fld_1a0a178adeeb41d58352448f0d4f0823
+          created: 1781265003839
+          modified: 1781265221523
+          sortKey: -1781265003839
+          description: ""
+        children:
+          - url: http://localhost:3000/quarto
+            name: Reservas de quarto
+            meta:
+              id: req_85bd776bfe484f709c01a1002d3d61a7
+              created: 1781265003843
+              modified: 1781266487015
+              isPrivate: false
+              description: ""
+              sortKey: -1781265003843
+            method: GET
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/quarto
+            name: Cadastrar
+            meta:
+              id: req_489edbe1ffda48308e264ad8ff8cdcb5
+              created: 1781265003859
+              modified: 1781266455435
+              isPrivate: false
+              description: ""
+              sortKey: -1781265003859
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "numero": 103,
+                  "tipo": "Suite"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/quarto/1
+            name: Excluir
+            meta:
+              id: req_dfb52d829aa44244985af9cd4340d65c
+              created: 1781265003869
+              modified: 1781266537562
+              isPrivate: false
+              description: ""
+              sortKey: -1781265003869
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/quarto
+            name: Listar
+            meta:
+              id: req_0ca5a62755324397b93372c68ed31a11
+              created: 1781265202671
+              modified: 1781266502343
+              isPrivate: false
+              description: ""
+              sortKey: -1781265202671
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.5.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Reserva
+        meta:
+          id: fld_d84905af3579465b8cb01e6a3cdb2856
+          created: 1781265003874
+          modified: 1781265003874
+          sortKey: -1781265003874
+          description: ""
+        children:
+          - url: http://localhost:3000/reserva/3
+            name: listar por quarto
+            meta:
+              id: req_ea220144e5c44429be147623b7a50087
+              created: 1781265003879
+              modified: 1781267531431
+              isPrivate: false
+              description: ""
+              sortKey: -1781265003879
+            method: GET
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/reserva
+            name: Cadastrar
+            meta:
+              id: req_2fe9ce0fb3b048ccba6a1c759ea31eb9
+              created: 1781265003890
+              modified: 1781267118951
+              isPrivate: false
+              description: ""
+              sortKey: -1781265003890
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "hospede": "Ribamar",
+                  "data_entrada": "2026-06-15",
+                  "data_saida": "2026-06-18",
+                  "quarto_id": 3
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/reserva/3
+            name: Excluir
+            meta:
+              id: req_cf85b6d5660048dcb4c86e82e6116c73
+              created: 1781265003902
+              modified: 1781267656158
+              isPrivate: false
+              description: ""
+              sortKey: -1781265003902
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1769617937342
+    modified: 1769617937342
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1769617937336
+    modified: 1769617937336
+    isPrivate: false
