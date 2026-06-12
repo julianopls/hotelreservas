@@ -88,7 +88,7 @@ npm install
 <h3>Configurar arquivo .env</h3>
 
 <pre>
-DATABASE_URL="mysql://usuario:senha@localhost:3306/hotelreservas"
+DATABASE_URL="mysql://usuario:senha@localhost:3306/hotel_db"
 PORT=3000
 </pre>
 
@@ -160,20 +160,9 @@ DELETE /reserva/:id
 
 <hr>
 
-<h2>👨‍💻 Autor</h2>
+<h2 align="center">👨‍💻 Autor</h2>
 
-<p>
+<p align="center>
   Desenvolvido por <strong>Juliano</strong>.
 </p>
 
-<p>
-  Projeto desenvolvido para estudo de:
-</p>
-
-<ul>
-  <li>CRUD</li>
-  <li>APIs REST</li>
-  <li>Prisma ORM</li>
-  <li>Banco de Dados Relacional</li>
-  <li>Integração Frontend e Backend</li>
-</ul>
