@@ -162,7 +162,7 @@ DELETE /reserva/:id
 
 <h2 align="center">👨‍💻 Autor</h2>
 
-<p align="center>
+<p align="center">
   Desenvolvido por <strong>Juliano</strong>.
 </p>
 
